@@ -19,9 +19,10 @@ const INPUT = styled.input`
 `
 const Formulario = () => {
  // useMoneda
- const [moneda, setMoneda, Seleccionar] = useMoneda('')
+ const [moneda, setMoneda, SelectMoneda] = useMoneda('')
  return (
   <form>
+   <SelectMoneda />
    <INPUT type='submit' value='calcular' />
   </form>
  )
