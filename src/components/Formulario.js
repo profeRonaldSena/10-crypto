@@ -17,7 +17,11 @@ const INPUT = styled.input`
  }
 `
 const Formulario = () => {
- return <form>Formulario</form>
+ return (
+  <form>
+   <INPUT type='submit' value='calcular' />
+  </form>
+ )
 }
 
 export default Formulario

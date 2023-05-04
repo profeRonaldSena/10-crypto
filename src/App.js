@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import imagen from './cryptomonedas.png'
+import Formulario from './components/Formulario'
 
 const DIV = styled.div`
  max-width: 900px;
@@ -39,6 +40,7 @@ export default function App() {
    </div>
    <div>
     <H1>Cotizar Criptomonedas</H1>
+    <Formulario />
    </div>
   </DIV>
  )
