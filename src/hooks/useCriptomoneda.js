@@ -24,14 +24,14 @@ const useCriptomoneda = (label, stateInitial, options) => {
  const [state, setState] = useState(stateInitial)
  const Seleccionar = () => (
   <>
-   <LABEL>Elije tu Moneda</LABEL>
+   <LABEL>Elije tu Criptomoneda</LABEL>
    <SELECT onChange={(e) => setState(e.target.value)} value={state}>
     <option value=''>- Seleccione -</option>
-    {options.map((option) => (
+    {/* {options.map((option) => (
      <option key={option.codigo} value={option.codigo}>
       {option.nombre}
      </option>
-    ))}
+    ))} */}
    </SELECT>
   </>
  )

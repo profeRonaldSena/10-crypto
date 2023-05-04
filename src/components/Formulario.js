@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import useMoneda from '../hooks/useMoneda'
+import useCriptomoneda from '../hooks/useCriptomoneda'
 
 const INPUT = styled.input`
  margin-top: 20px;
@@ -26,14 +27,19 @@ const Formulario = () => {
   { codigo: 'MXN', nombre: 'Peso Mexicano' },
   { codigo: 'COP', nombre: 'Peso Colombiano' },
  ]
- // useMoneda
+ // useHooks
  const [moneda, setMoneda, SelectMoneda] = useMoneda(
   'Elige tu Moneda',
   '',
   MONEDAS
  )
+ const [crypto, setCrypto, SelectCrypto] = useCriptomoneda(
+  'Elige tu Criptomoneda',
+  ''
+ )
  return (
   <form>
+   <SelectCrypto />
    <SelectMoneda />
    <INPUT type='submit' value='calcular' />
   </form>
