@@ -1,6 +1,8 @@
 import styled from '@emotion/styled'
 import useMoneda from '../hooks/useMoneda'
 import useCriptomoneda from '../hooks/useCriptomoneda'
+import { useEffect } from 'react'
+import axios from 'axios'
 
 const INPUT = styled.input`
  margin-top: 20px;
@@ -37,6 +39,15 @@ const Formulario = () => {
   'Elige tu Criptomoneda',
   ''
  )
+ //  llamado a la api
+ useEffect(() => {
+  const consultarAPI = async () => {
+   const url =
+    'https://min-api.cryptocompare.com/data/top/mktcapfull?limit=10&tsym=USD'
+   const resultado = await axios.get(url)
+  }
+ }, [])
+
  return (
   <form>
    <SelectMoneda />
