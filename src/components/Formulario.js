@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import useMoneda from '../hooks/useMoneda'
 
 const INPUT = styled.input`
  margin-top: 20px;
@@ -17,6 +18,8 @@ const INPUT = styled.input`
  }
 `
 const Formulario = () => {
+ // useMoneda
+ const [moneda, setMoneda, Seleccionar] = useMoneda('')
  return (
   <form>
    <INPUT type='submit' value='calcular' />
