@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-const useMoneda = () => {
+const useMoneda = (label, stateInitial) => {
  // useState
- const [state, setState] = useState('')
+ const [state, setState] = useState(stateInitial)
  const Seleccionar = () => (
   <>
    <label>Moneda</label>
