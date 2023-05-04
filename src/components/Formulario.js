@@ -39,8 +39,8 @@ const Formulario = () => {
  )
  return (
   <form>
-   <SelectCrypto />
    <SelectMoneda />
+   <SelectCrypto />
    <INPUT type='submit' value='calcular' />
   </form>
  )
