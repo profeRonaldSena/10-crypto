@@ -19,8 +19,7 @@ const SELECT = styled.select`
  border: none;
  font-size: 1.2rem;
 `
-
-const useMoneda = (label, stateInitial, options) => {
+const useCriptomoneda = (label, stateInitial, options) => {
  // useState
  const [state, setState] = useState(stateInitial)
  const Seleccionar = () => (
@@ -38,5 +37,4 @@ const useMoneda = (label, stateInitial, options) => {
  )
  return [state, setState, Seleccionar]
 }
-
-export default useMoneda
+export default useCriptomoneda
