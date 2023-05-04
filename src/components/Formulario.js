@@ -27,7 +27,11 @@ const Formulario = () => {
   { codigo: 'COP', nombre: 'Peso Colombiano' },
  ]
  // useMoneda
- const [moneda, setMoneda, SelectMoneda] = useMoneda('Elige tu Moneda', '')
+ const [moneda, setMoneda, SelectMoneda] = useMoneda(
+  'Elige tu Moneda',
+  '',
+  MONEDAS
+ )
  return (
   <form>
    <SelectMoneda />
